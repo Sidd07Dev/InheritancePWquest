@@ -1,0 +1,27 @@
+package Package;
+
+interface Drawable {
+    void draw();
+}
+
+class Circle implements Drawable {
+    public void draw() {
+        System.out.println("in Circle class draw method");
+    }
+}
+
+class Rectangle implements Drawable {
+    public void draw() {
+        System.out.println("In Rectangle class draw method ");
+    }
+}
+
+public class Demo3 {
+    public static void main(String[] args) {
+        Circle cl = new Circle();
+        cl.draw();
+        Rectangle rt = new Rectangle();
+        rt.draw();
+    }
+
+}
