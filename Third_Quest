@@ -1,0 +1,29 @@
+package Package;
+class Person{
+    private int Age;
+    private String Address,Name;
+
+    void setData(int Age,String Name,String Address)
+    {
+        this.Address=Address;
+        this.Name=Name;
+        this.Age=Age;
+    }
+    int  getData()
+    {
+        System.out.println("Name is :"+this.Name);
+        System.out.println("Age is :"+this.Age);
+        System.out.println("Adress is :"+this.Address);
+        return 0;
+    }
+}
+public class Demo2 {
+    public static void main(String[] args) {
+        Person ob=new Person();
+        ob.setData(10, "PW SKILLS", "Noida");
+        ob.getData();
+        Person ob1=new Person();
+        ob1.setData(15, "VISHWA SIR", "DELHI");
+        ob1.getData();
+    }
+}
